@@ -21,6 +21,17 @@ Some(8)
 ```
 [solution](src/p01/mod.rs)
 
+## P02 (*) Find the last but one element of a list.
+Input:
+```
+penultimate(vec![1, 1, 2, 3, 5, 8]);
+```
+Output:
+```
+Some(5)
+```
+[solution](src/p02/mod.rs)
+
 [rust-book]: https://doc.rust-lang.org/book/title-page.html
 [rust-by-example]: https://doc.rust-lang.org/rust-by-example/index.html
 [rust-style-guide]: https://doc.rust-lang.org/1.0.0/style/README.html
