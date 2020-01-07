@@ -14,8 +14,12 @@ fn main() {
     println!("-------------------");
 
     println!("Problem 02 - Find the last but one element of a list. Input 'vec![1, 1, 2, 3, 5, 8]'");
-    let p01_input = vec![1, 1, 2, 3, 5, 8];
-    let p02_result = p02::penultimate(p01_input);
+    let p02_input = vec![1, 1, 2, 3, 5, 8];
+    let p02_result = p02::penultimate(p02_input);
     println!("The result (functional) is: {:?}", p02_result);
+    println!("-------------------");
+
+    println!("Problem 03 - Find the Kth element of a list. Input 'vec![1, 1, 2, 3, 5, 8]'");
+    let p03_input = vec![1, 1, 2, 3, 5, 8];
     println!("-------------------");
 }
