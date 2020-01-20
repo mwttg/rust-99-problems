@@ -27,4 +27,8 @@ fn main() {
     println!("The result is: {:?}", p03_result);
     println!("The result is: {:?}", p03_result_recursive);
     println!("-------------------");
+
+    println!("Problem 04 - Find the number of elements of a list. Input vec![1, 1, 2, 3, 5, 8]");
+    let p03_input = vec![1, 1, 2, 3, 5, 8];
+    println!("-------------------");
 }
