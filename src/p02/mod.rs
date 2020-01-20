@@ -5,13 +5,14 @@
 /// output:
 ///   Some(5)
 
-pub fn penultimate<T>(xs: Vec<T>) -> Option<T> {
+pub fn penultimate<T: Clone>(xs: &Vec<T>) -> Option<T> {
     let length = xs.len();
     return if length <= 1 {
         None
     } else {
         let position = length - 1 - 1; // counting from zero; penultimate element
-        xs.into_iter().nth(position)
+        let result = xs.into_iter().nth(position);
+        result.cloned()
     }
 }
 
@@ -23,28 +24,28 @@ mod tests {
     #[test]
     fn penultimate_valid_input_int() {
         let input = vec![1, 2, 3];
-        let actual = penultimate(input);
+        let actual = penultimate(&input);
         assert_eq!(actual, Some(2))
     }
 
     #[test]
     fn penultimate_valid_input_string() {
         let input = vec!["1", "2", "3"];
-        let actual = penultimate(input);
+        let actual = penultimate(&input);
         assert_eq!(actual, Some("2"))
     }
 
     #[test]
     fn penultimate_valid_empty_input() {
         let input: Vec<i32> = Vec::new();
-        let actual = penultimate(input);
+        let actual = penultimate(&input);
         assert_eq!(actual, None)
     }
 
     #[test]
     fn penultimate_valid_input_of_size_one() {
         let input = vec![5];
-        let actual = penultimate(input);
+        let actual = penultimate(&input);
         assert_eq!(actual, None)
     }
 }
