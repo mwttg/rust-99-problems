@@ -45,6 +45,17 @@ Some(2)
 ```
 [solution](src/p03/mod.rs)
 
+## P04 (*) Find the number of elements of a list.
+Input:
+```
+length(vec![1, 1, 2, 3, 5, 8])
+```
+Output:
+```
+6
+```
+[solution](src/p04/mod.rs)
+
 [rust-book]: https://doc.rust-lang.org/book/title-page.html
 [rust-by-example]: https://doc.rust-lang.org/rust-by-example/index.html
 [rust-style-guide]: https://doc.rust-lang.org/1.0.0/style/README.html
