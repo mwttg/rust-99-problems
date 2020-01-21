@@ -6,17 +6,11 @@
 ///   Some(2)
 
 pub fn nth<T: Clone>(n: usize, xs: &Vec<T>) -> Option<T> {
-    let size = xs.len();
-    return if xs.is_empty() || n > size - 1  {
-        None
-    } else {
-        let result = xs.get(n).unwrap().clone();
-        Some(result)
-    }
+    return xs.get(n).cloned();
 }
 
 pub fn nth_recursive<T: Clone>(n: usize, xs: &Vec<T>) -> Option<T> {
-    return helper(n, 0, xs, None);
+    helper(n, 0, xs, None)
 }
 
 fn helper<T: Clone>(n: usize, current_n: usize, current_xs: &Vec<T>, accumulator: Option<T>) -> Option<T> {
