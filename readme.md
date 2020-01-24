@@ -56,6 +56,17 @@ Output:
 ```
 [solution](src/p04/mod.rs)
 
+## P05 (*) Reverse a list.
+Input:
+```
+reverse(vec![1, 1, 2, 3, 5, 8])
+```
+Output:
+```
+vec![8, 5, 3, 2, 1, 1]
+```
+[solution](src/p05/mod.rs)
+
 [rust-book]: https://doc.rust-lang.org/book/title-page.html
 [rust-by-example]: https://doc.rust-lang.org/rust-by-example/index.html
 [rust-style-guide]: https://doc.rust-lang.org/1.0.0/style/README.html
