@@ -2,6 +2,7 @@ mod p01;
 mod p02;
 mod p03;
 mod p04;
+mod p05;
 
 fn main() {
     println!("99 Problems in Rust");
@@ -29,11 +30,19 @@ fn main() {
     println!("The result is: {:?}", p03_result_recursive);
     println!("-------------------");
 
-    println!("Problem 04 - Find the number of elements of a list. Input vec![1, 1, 2, 3, 5, 8]");
+    println!("Problem 04 - Find the number of elements of a list. Input 'vec![1, 1, 2, 3, 5, 8]'");
     let p04_input = vec![1, 1, 2, 3, 5, 8];
     let p04_result = p04::length(&p04_input);
     let p04_result_recursive = p04::length_recursive(&p04_input);
     println!("The result is: {:?}", p04_result);
     println!("The result is: {:?}", p04_result_recursive);
+    println!("-------------------");
+
+    println!("Problem 05 - Reverse a list. Input 'vec![1, 1, 2, 3, 5, 8]'");
+    let p05_input = vec![1, 1, 2, 3, 5, 8];
+    let p05_result = p05::reverse(&p05_input);
+    let p05_result_recursive = p05::reverse_recursive(&p05_input);
+    println!("The result is: {:?}", p05_result);
+    println!("The result is: {:?}", p05_result_recursive);
     println!("-------------------");
 }
