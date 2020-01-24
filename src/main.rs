@@ -41,6 +41,8 @@ fn main() {
     println!("Problem 05 - Reverse a list. Input 'vec![1, 1, 2, 3, 5, 8]'");
     let p05_input = vec![1, 1, 2, 3, 5, 8];
     let p05_result = p05::reverse(&p05_input);
+    let p05_result_recursive = p05::reverse_recursive(&p05_input);
     println!("The result is: {:?}", p05_result);
+    println!("The result is: {:?}", p05_result_recursive);
     println!("-------------------");
 }
